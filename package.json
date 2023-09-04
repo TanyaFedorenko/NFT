@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "glob-parent": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "reset-css": "^5.0.1",
+    "sass": "^1.51.0"
+  },
+  "name": "nft",
+  "version": "1.0.0",
+  "description": "my new project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tetiana",
+  "license": "ISC"
+}

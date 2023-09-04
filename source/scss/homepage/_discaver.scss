@@ -1,0 +1,17 @@
+.discover{
+    &__card{
+        width: 30%;
+    
+    }
+    &__card-back{
+        & img{
+            height: 296px;
+            object-fit: cover;
+        }
+    }
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}

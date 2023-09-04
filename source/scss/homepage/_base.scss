@@ -1,0 +1,115 @@
+.home {
+  &__categories-wrap {
+    margin-top: 60px;
+  }
+
+  &__block-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__timer {
+    // background:url(../../../source/src/images/mushroom.jpg);
+    padding-top: 240px;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%), url(../../../source/src/images/mushroom.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%, cover;
+
+    &-wrap {
+      display: flex;
+      align-items: flex-end;
+
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-author {
+      width: fit-content;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: #3B3B3B;
+
+
+      & img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding-right: 12px;
+      }
+
+      & span {
+        vertical-align: super;
+      }
+    }
+
+    &-timer {
+      margin-left: auto;
+    }
+  }
+
+  &__work {
+    &-creators {
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+
+    &-creator {
+      width: 330px;
+      padding: 10px 30px 30px;
+      border-radius: 20px;
+      background: #3B3B3B;
+
+      &-avatar {
+        margin: 0 auto 20px;
+        width: 250px;
+        height: 250px;
+      }
+
+      &-desc {
+        text-align: center;
+
+        & h6 {
+          margin-bottom: 10px;
+          font-size: 1.375em;
+          font-weight: 600;
+          line-height: 140%;
+        }
+
+        & p {
+          font-size: 1em;
+          line-height: 140%;
+        }
+      }
+
+    }
+  }
+
+  &__join {
+    padding: 40px 0 80px;
+    &-block {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      border-radius:20px;
+      padding: 60px;
+      background: $secondaryBackground;
+
+      & img {
+        width: 425px;
+        border-radius: 20px;
+
+      }
+    }
+    &-form-email{
+      margin-top: 40px;
+    }
+  }
+}

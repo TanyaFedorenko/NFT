@@ -1,0 +1,20 @@
+
+.title {
+    font-family: Work Sans;
+    font-size: 2.375em;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    @media (min-width:$large) {
+        font-size: 3.2em;
+       
+        line-height: 110%;
+    }
+    &~p{
+        padding-top: 10px;
+        font-size: 1.375em;
+        font-weight: 400;
+        line-height: 160%;
+    }
+}

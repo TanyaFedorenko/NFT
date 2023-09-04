@@ -1,0 +1,58 @@
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    counter-reset: num-p;
+
+    & .creators__creator {
+        position: relative;
+        width: 23%;
+        max-width: 240px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $secondaryBackground;
+        counter-increment: num-p;
+        margin: 0;
+
+        &::before {
+            position: absolute;
+            content: counter(num-p);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color:$background;
+            border-radius:50%;
+            font-weight: 400;
+            color:#858584;
+           
+        }
+        &-avatar{
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            margin-bottom:20px;
+        }
+        &-desc{
+            & h6{
+                font-size: 1.375em ;
+                font-weight: 600;
+                line-height: 140%;
+                padding-bottom: 5px;
+                &~p{
+                    color: #858584;
+                    font-size: 1em;
+                    line-height: 140%;
+                    & span{
+                        color:$textColor;
+                    }
+                }
+            }
+
+        }
+    }
+  
+
+}

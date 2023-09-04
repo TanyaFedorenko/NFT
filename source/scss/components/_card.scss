@@ -1,0 +1,54 @@
+.card {
+    background-color: $secondaryBackground;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__back {
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__desc {
+        padding: 20px 30px 25px;
+    }
+
+    &__author {
+        & h4 {
+            font-size: 1.375em;
+            font-weight: 700;
+        }
+        &-name{
+            font-size: 1em;
+        }
+        &-info{
+            display: flex;
+            align-items:center;
+            margin-top: 10px;
+            gap: 12px;
+        }
+       &-icon{
+        flex-shrink: 0;
+        width: 24px;
+       }
+    }
+    &__price{
+        display: flex;
+        margin-top: 27px;
+        margin-bottom: 5px;
+        &-wrap{
+            width: 50%;
+            &:not(:first-child){
+                text-align: end;
+            }
+            & p:first-child{
+                padding-bottom: 8px;
+                font-size: 0.75em;
+                line-height: 110%;
+                color:#858584;
+            }
+        }
+    }
+  
+}

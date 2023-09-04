@@ -1,0 +1,39 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    font-weight: 140%;
+
+    & svg,
+    & img {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    &--dark {
+        background: $secondaryBackground;
+        color: $textColor;
+
+    }
+    &--blue{
+        background: $ActionColor;
+        color: $textColor;
+    }
+    &--light{
+        background: $textColor;
+        color: $background;
+    }
+    &--border{
+        border: 2px solid $ActionColor;
+        background:transparent;
+        color:$textColor;
+    }
+
+}

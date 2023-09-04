@@ -1,0 +1,55 @@
+.banner{
+    &__wrap{
+    
+        @media (min-width:$medium) {
+            display: flex;
+            align-items:flex-start;
+            gap: 30px;
+        }
+    }
+    &__inner{
+        margin-bottom: 30px;
+        
+        & p:nth-child(2){
+            display: inline-block;
+            padding: 20px 40px 30px 0;
+            line-height: 160%;
+            font-size: 1.375em;
+        }
+    }
+    &__card{
+        flex: 1 0 100%;
+  
+        &-desc{
+            padding: 20px;
+        }
+
+        @media (min-width:$small) {
+            flex: 1 0 330px;
+        }
+        @media (min-width:$large) {
+            flex: 1 0 510px;
+        }
+       
+    }
+    &__advantages{
+      
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        &-item{
+            min-width: 150px;
+          
+            & p:first-child{
+                font-size: 1.75em;
+                font-weight: 700;
+                line-height: 140%;
+            }
+            p~p{
+                font-size: 1.43em;
+                font-weight: 400;
+                line-height: 160%;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+body{
+    @extend %font;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media (min-width:$medium) {
+        width: 690px;
+    }
+    @media (min-width:$extraLarge){
+        width: 1110px;
+    }
+}
+.backDark{
+    background-color: $background;
+    color: $textColor;
+}
+.section__80{
+    padding: 80px 0;
+   
+}

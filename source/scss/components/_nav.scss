@@ -1,0 +1,57 @@
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__list {
+        display: flex;
+        gap: 10px;
+
+        & li {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 20px;
+        color: $textColor;
+        font-weight: 600;
+    }
+
+    &__burger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+
+        @media (min-width:$large) {
+            display: none;
+           }
+
+        & div {
+            width: 24px;
+            height: 2px;
+            border-radius: 6px;
+            background-color: $textColor;
+        }
+        &::after,
+        &::before{
+            position: absolute;
+            content:'';
+            display: block;
+            border-radius: 6px;
+            width: 20px;
+            height: 2px;
+            background-color: $textColor;
+        }
+        &::after{
+            bottom: 3px;
+        }
+        &::before{
+            top: 3px;
+        }
+    }
+}
