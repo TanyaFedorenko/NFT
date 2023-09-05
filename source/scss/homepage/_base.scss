@@ -56,25 +56,58 @@
   &__work {
     &-creators {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      gap: 30px;
+
+      @media (min-width:$medium) {
+       flex-direction: row;
+    }
 
 
     }
 
     &-creator {
-      width: 330px;
-      padding: 10px 30px 30px;
+      display: flex;
+      align-items:center;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
       border-radius: 20px;
       background: #3B3B3B;
+      @media (min-width:$medium) {
+        display: block;
+        width: 30%;
+        padding: 10px 30px 30px;
+    }
+
+      @media (min-width:1110px) {
+        width: 330px;
+    }
 
       &-avatar {
-        margin: 0 auto 20px;
-        width: 250px;
-        height: 250px;
+       
+        width: 100px;
+        height: 100px;
+
+        @media (min-width:$medium) {
+          width: 160px;
+          height: 160px;
+          margin: 0 auto 20px;
+      }
+        @media (min-width:1110px) {
+          width: 250px;
+          height: 250px;
+      }
       }
 
       &-desc {
-        text-align: center;
+    
+        @media (min-width:$medium) {
+          text-align: center;
+        }
+
+
 
         & h6 {
           margin-bottom: 10px;
@@ -94,17 +127,78 @@
 
   &__join {
     padding: 40px 0 80px;
+
+    &-form-email{
+      .form-email__wrap{
+          display: grid;
+          grid-template-columns: 1fr auto auto;
+         
+          gap: 1rem;
+          border-radius: 20px;
+
+          & input[type="email"] {
+            grid-area: 1/1/2/3;
+            max-height: 46px;
+            padding-left: 20px;
+            border: none;
+            border-radius: 20px;
+            color: $background;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 140%;
+
+            @media (min-width:1110px) {
+                grid-area: 1/1/2/3;
+                max-height: 56px;
+                border-radius: 20px 0px 0px 20px;
+            }
+        }
+
+        & .btn {
+            width: 100%;
+            position: relative;
+            left: 2px;
+            bottom: 0;
+            grid-area: 1/2/2/4;
+            background-color: $ActionColor;
+            &:hover{
+                background-color: darken($ActionColor, 10);
+            }
+
+            @media (min-width:1110px) {
+                grid-area: 1/2/2/4;
+                background-color: $secondaryBackground;
+                &:hover{
+                    background-color: darken($secondaryBackground, 10);
+                }
+            }
+        }
+      }
+ 
+  }
     &-block {
       display: flex;
       align-items: center;
-      gap: 80px;
+      flex-direction: column;
+      gap: 30px;
       border-radius:20px;
       padding: 60px;
       background: $secondaryBackground;
 
+
+      @media (min-width:$medium) {
+      flex-direction: row;
+      gap: 80px;
+      }
+
       & img {
-        width: 425px;
+        width: 300px;
         border-radius: 20px;
+
+        @media (min-width:1110px) {
+          width: 425px;
+        }
+
 
       }
     }

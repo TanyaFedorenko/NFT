@@ -45,6 +45,11 @@
             font-size: 1.375em;
             font-weight: 600;
             line-height: 160%;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            &:hover{
+                color: $ActionColor;
+            }
         }
 
     }

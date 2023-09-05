@@ -3,25 +3,38 @@
     background:$secondaryBackground;
     color: #CCC;
     &__title{
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         color: $textColor;
         font-size: 1.375em;
         font-weight: 700;
         line-height: 160%;
+        @media (min-width:1110px) {
+            margin-bottom: 25px;
+          }
     }
     &__wrap{
         &:first-child{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            gap: 30px;
             border-bottom: 1px solid $labelTextColor;
             padding-bottom: 30px;
+
+            @media (min-width:1110px) {
+                flex-direction: row;
+                justify-content: space-between;
+              }
         }
         &:last-child{
             padding-top: 20px;
         }
     }
     &__logo{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        @media (min-width:1110px) {
+            margin-bottom: 30px;
+          }
         & img{
             width: auto;
             height: 32px;

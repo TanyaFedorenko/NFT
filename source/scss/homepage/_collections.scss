@@ -1,8 +1,11 @@
 .collections{
     &__inner{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 30px;
         margin-top: 60px;
+        @media (min-width:1110px) {
+            justify-content: space-between;
+          }
     }
 }

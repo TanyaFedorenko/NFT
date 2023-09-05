@@ -1,7 +1,13 @@
 .card {
     background-color: $secondaryBackground;
     border-radius: 20px;
+    cursor: pointer;
     overflow: hidden;
+    &:hover{
+        .card__author h4{
+            color:$ActionColor;
+        }
+    }
 
     &__back {
         & img {

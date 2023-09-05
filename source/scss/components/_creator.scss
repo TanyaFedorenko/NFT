@@ -7,13 +7,22 @@
 
     & .creators__creator {
         position: relative;
-        width: 23%;
+        display: flex;
+        align-items:center;
+        gap: 20px;
+       
         max-width: 240px;
+        max-width: 330px;
         padding: 20px;
         border-radius: 20px;
         background-color: $secondaryBackground;
         counter-increment: num-p;
         margin: 0;
+        @media (min-width:$extraLarge) {
+            display: block;
+            width: 33%;
+            max-width: 240px;
+        }
 
         &::before {
             position: absolute;
@@ -23,10 +32,14 @@
             display: flex;
             align-items:center;
             justify-content: center;
+            top: 20px;
             background-color:$background;
             border-radius:50%;
             font-weight: 400;
             color:#858584;
+            @media (min-width:$extraLarge) {
+            top: unset;
+            }
            
         }
         &-avatar{

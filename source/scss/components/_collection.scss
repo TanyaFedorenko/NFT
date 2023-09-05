@@ -1,10 +1,20 @@
 .collection {
-    max-width: 33%;
+    max-width: 50%;
+    @media (min-width:1110px) {
+        max-width: 33%;
+      }
+    &:last-child{
+        display: none;
+        @media (min-width:1110px) {
+          display: block;
+        }
+    }
 
     &__link {
         display: flex;
         gap: 15px;
         justify-content: space-between;
+      
 
         & li {
             display: flex;
@@ -13,11 +23,16 @@
             width: 100px;
             height: 100px;
             border-radius: 20px;
+            cursor: pointer;
             overflow: hidden;
 
             &:last-child {
                 background-color: $ActionColor;
                 color: $textColor;
+                transition: background ease 0.3s;
+                &:hover{
+                    background-color: darken($ActionColor, 10);
+                }
             }
         }
 

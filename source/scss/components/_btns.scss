@@ -9,6 +9,7 @@
     border: none;
     font-size: 1em;
     font-weight: 140%;
+    transition: background 0.3s ease, color 0.3s ease;
 
     & svg,
     & img {
@@ -20,20 +21,33 @@
     &--dark {
         background: $secondaryBackground;
         color: $textColor;
+        &:hover{
+            background:$background;
+        }
 
     }
     &--blue{
         background: $ActionColor;
         color: $textColor;
+        &:hover{
+            background:darken( $ActionColor,5 )
+        }
     }
     &--light{
         background: $textColor;
         color: $background;
+        &:hover{
+            background:$background;
+            color: $textColor;
+        }
     }
     &--border{
         border: 2px solid $ActionColor;
         background:transparent;
         color:$textColor;
+        &:hover{
+            border-color:darken( $ActionColor,5 )
+        }
     }
 
 }

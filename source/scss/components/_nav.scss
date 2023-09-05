@@ -4,13 +4,16 @@
     gap: 10px;
 
     &__list {
-        display: flex;
+        display: none;
         gap: 10px;
 
         & li {
             display: flex;
             align-items: center;
         }
+        @media (min-width:$extraLarge) {
+            display:  flex;
+           }
     }
 
     &__link {
@@ -18,6 +21,10 @@
         padding: 20px;
         color: $textColor;
         font-weight: 600;
+        transition: text-decoration 0.3s ease;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     &__burger {
@@ -27,7 +34,7 @@
         width: 24px;
         height: 24px;
 
-        @media (min-width:$large) {
+        @media (min-width:$extraLarge) {
             display: none;
            }
 

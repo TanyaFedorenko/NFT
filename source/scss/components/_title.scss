@@ -1,10 +1,13 @@
 
 .title {
     font-family: Work Sans;
-    font-size: 2.375em;
+    font-size: 1.375em;
     line-height: 120%;
     font-weight: 600;
     text-transform: capitalize;
+    @media (min-width:$medium) {
+        font-size: 2.375em;
+    }
 
     @media (min-width:$large) {
         font-size: 3.2em;
