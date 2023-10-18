@@ -8,19 +8,24 @@
     & .creators__creator {
         position: relative;
         display: flex;
-        align-items:center;
+        align-items: center;
         gap: 20px;
-       
-        max-width: 240px;
-        max-width: 330px;
+        flex-basis: 100%;
         padding: 20px;
         border-radius: 20px;
         background-color: $secondaryBackground;
         counter-increment: num-p;
         margin: 0;
-        @media (min-width:$extraLarge) {
+
+        @media (min-width:$small) {
             display: block;
-            width: 33%;
+            flex-basis: 47%;
+
+        }
+
+        @media (min-width:$large) {
+            display: block;
+            flex-basis: 33%;
             max-width: 240px;
         }
 
@@ -30,42 +35,47 @@
             width: 30px;
             height: 30px;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             top: 20px;
-            background-color:$background;
-            border-radius:50%;
+            background-color: $background;
+            border-radius: 50%;
             font-weight: 400;
-            color:#858584;
+            color: #858584;
+
             @media (min-width:$extraLarge) {
-            top: unset;
+                top: unset;
             }
-           
+
         }
-        &-avatar{
+
+        &-avatar {
             width: 120px;
             height: 120px;
             margin: 0 auto;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
-        &-desc{
-            & h6{
-                font-size: 1.375em ;
+
+        &-desc {
+            & h6 {
+                font-size: 1.375em;
                 font-weight: 600;
                 line-height: 140%;
                 padding-bottom: 5px;
-                &~p{
+
+                &~p {
                     color: #858584;
                     font-size: 1em;
                     line-height: 140%;
-                    & span{
-                        color:$textColor;
+
+                    & span {
+                        color: $textColor;
                     }
                 }
             }
 
         }
     }
-  
+
 
 }

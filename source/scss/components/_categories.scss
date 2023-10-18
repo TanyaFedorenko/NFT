@@ -3,14 +3,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     &__card {
-        width: 25%;
+        flex-basis: calc(50% - 0.9375rem);
+        flex-grow: 1;
         max-width: 240px;
         border-radius:20px;
         overflow: hidden;
+        @media(min-width:$medium){
+            flex-basis: 25%;
+            flex-grow: 1;
+            max-width: 240px;
+        }
+
 
         &-back {
             position: relative;

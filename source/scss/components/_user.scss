@@ -1,0 +1,70 @@
+.user {
+  &__content {
+    background: #2b2b2b;
+
+    @media (min-width: $medium) {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (min-width: $medium) {
+        gap: 60px;
+        padding-right: 20px;
+      }
+
+      @media (min-width: 1281px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 30px 0 40px;
+
+    @media (min-width: $medium) {
+      width: 325px;
+      margin: 0;
+    }
+
+    @media (min-width: $large) {
+      width: 460px;
+    }
+  }
+
+  &__form {
+    margin: 30px 0 0;
+  }
+
+  &__back {
+    display: flex;
+    max-height: 600px;
+
+    @media (min-width: $small) {
+    }
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__wallet-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    border: 1px solid #a259ff;
+    background: #3b3b3b;
+    color: #fff;
+    font-size: 1.375em;
+    font-style: normal;
+    font-weight: 600;
+
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
