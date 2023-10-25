@@ -332,6 +332,12 @@ img {
   margin-top: 40px;
 }
 
+.account-form {
+  display: none;
+}
+.account-form.active {
+  display: block;
+}
 .account-form__label {
   display: grid;
   grid-template-columns: 20px 200px;
@@ -359,6 +365,17 @@ img {
 }
 .account-form__btn {
   width: 100%;
+}
+.account-form__reg {
+  display: block;
+  margin: 15px auto 0;
+  border: none;
+  background: transparent;
+  color: #A259FF;
+  transition: color 0.3s ease;
+}
+.account-form__reg:hover {
+  color: #ffffff;
 }
 
 .social__list {

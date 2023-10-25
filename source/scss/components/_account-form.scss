@@ -1,4 +1,8 @@
 .account-form {
+    display: none;
+    &.active{
+        display: block;
+    }
 
     &__label {
         display: grid;
@@ -14,21 +18,37 @@
         &:not(:last-child) {
             margin-bottom: 15px;
         }
-        & input{
+
+        & input {
             width: 100%;
-            padding:  13px 20px 13px 0;
-            border:none;
+            padding: 13px 20px 13px 0;
+            border: none;
             font-size: 1em;
             line-height: 140%;
-            color:#2B2B2B;
-            &:focus-visible{
+            color: #2B2B2B;
+
+            &:focus-visible {
                 outline: none;
             }
         }
     }
-    &__btn{
+
+    &__btn {
         width: 100%;
 
+    }
+
+    &__reg {
+        display: block;
+        margin: 15px auto 0;
+        border: none;
+        background: transparent;
+        color: $ActionColor;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $textColor;
+        }
     }
 
 }
